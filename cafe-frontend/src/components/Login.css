@@ -1,0 +1,106 @@
+/* Login.css - Coffee Themed */
+
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #5b3924; /* Coffee brown */
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #d9c5b2;
+  font-size: 16px;
+  background-color: #fdfaf7;
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #a47148;
+  box-shadow: 0 0 5px rgba(164, 113, 72, 0.3);
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6f4e37; /* Dark coffee */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #5b3924;
+}
+
+.login-container a {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  color: #6f4e37;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    margin: 40px 20px;
+    padding: 25px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-container input,
+  .login-container button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    margin: 30px 10px;
+    padding: 20px;
+  }
+
+  .login-title {
+    font-size: 20px;
+  }
+
+  .login-container input,
+  .login-container button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

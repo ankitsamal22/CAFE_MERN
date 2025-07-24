@@ -1,0 +1,114 @@
+/* Order.css - Coffee Themed Styles */
+
+.order-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #fff7f0; /* Creamy background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order-heading {
+  color: #4b2e2e; /* Mocha brown */
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-card {
+  background-color: #f3e5ab; /* Light caramel */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #d7ccc8;
+}
+
+.order-card p {
+  margin: 6px 0;
+  font-weight: 500;
+  color: #4e342e;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #a1887f;
+  padding: 10px;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: #6d4c41;
+  color: #fff;
+}
+
+.order-table td {
+  background-color: #efebe9;
+  color: #3e2723;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #d7ccc8;
+  margin: 20px 0;
+}
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 768px) {
+  .order-container {
+    padding: 16px;
+    margin: 20px 12px;
+  }
+
+  .order-heading {
+    font-size: 24px;
+  }
+
+  .order-card {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .order-table th,
+  .order-table td {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order-container {
+    padding: 12px;
+    margin: 15px 8px;
+  }
+
+  .order-heading {
+    font-size: 20px;
+  }
+
+  .order-card {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .order-table th,
+  .order-table td {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  /* Make table horizontally scrollable on small screens */
+  .order-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

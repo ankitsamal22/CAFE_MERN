@@ -1,0 +1,70 @@
+/* Register.css */
+
+.App-Register-Row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(to right, #4b2c20, #6f4e37); /* Coffee gradient */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.App-Register-Row > div {
+  background-color: #fffaf5;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: #4b2c20;
+}
+
+.App-Register-Row h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #3e2723;
+}
+
+.App-Register-Row input[type="text"],
+.App-Register-Row input[type="password"] {
+  width: 90%;
+  padding: 0.6rem;
+  margin: 0.6rem 0;
+  border: 1px solid #b89b85;
+  border-radius: 6px;
+  background-color: #fff9f5;
+  color: #4b2c20;
+}
+
+.App-Register-Row input::placeholder {
+  color: #a67c52;
+}
+
+.App-Register-Row button {
+  padding: 0.6rem 1.5rem;
+  background-color: #6f4e37;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.App-Register-Row button:hover {
+  background-color: #5c3b28;
+}
+
+.App-Register-Row a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #6f4e37;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.App-Register-Row a:hover {
+  text-decoration: underline;
+}

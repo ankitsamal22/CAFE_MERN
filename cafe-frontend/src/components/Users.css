@@ -1,0 +1,142 @@
+.user-management {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f6f1e7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4b3621;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(73, 47, 23, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #6b4c3b;
+}
+
+.status {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #a0522d;
+}
+
+.user-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-form input,
+.user-form select {
+  padding: 0.6rem;
+  border: 1px solid #cbbfa1;
+  border-radius: 5px;
+  flex: 1 1 45%;
+  background-color: #fffdf6;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.add {
+  background-color: #8b5e3c;
+  color: white;
+}
+
+.btn.update {
+  background-color: #4e3629;
+  color: white;
+}
+
+.btn.cancel {
+  background-color: #d3b49f;
+  color: #4e3629;
+}
+
+.btn.edit {
+  background-color: #6f4e37;
+  color: white;
+}
+
+.btn.delete {
+  background-color: #b22222;
+  color: white;
+}
+
+.search-bar {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cbbfa1;
+  border-radius: 5px;
+  background-color: #fffdf6;
+}
+
+.user-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fffaf3;
+  border: 1px solid #d8c4aa;
+}
+
+.user-table th,
+.user-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #d8c4aa;
+}
+
+.pagination {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  background-color: #a47149;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .user-form {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .user-table table,
+  .user-table th,
+  .user-table td {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,158 @@
+/* Base Styles */
+.orders-container {
+  background-color: #f9f4ef;
+  color: #4b2e2e;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(120, 90, 70, 0.2);
+}
+
+.orders-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6f4e37;
+}
+
+.orders-filter {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.orders-filter label {
+  font-weight: bold;
+}
+
+.orders-filter select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #c1a57b;
+  background-color: #fff9f5;
+}
+
+.orders-list {
+  list-style: none;
+  padding: 0;
+}
+
+.order-item {
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #6f4e37;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(80, 60, 40, 0.1);
+}
+
+.order-item span {
+  display: block;
+  margin: 5px 0;
+}
+
+.order-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cancel-btn,
+.complete-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #d45d5d;
+}
+
+.complete-btn {
+  background-color: #6ca965;
+}
+
+.cancel-btn:hover {
+  background-color: #b84444;
+}
+
+.complete-btn:hover {
+  background-color: #599e54;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #d6b48d;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #c8a982;
+  cursor: not-allowed;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ✅ Responsive Styling */
+
+@media screen and (max-width: 768px) {
+  .orders-container {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .orders-title {
+    font-size: 1.5rem;
+  }
+
+  .orders-filter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .order-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .orders-title {
+    font-size: 1.3rem;
+  }
+
+  .cancel-btn,
+  .complete-btn {
+    width: 100%;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

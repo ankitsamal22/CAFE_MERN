@@ -1,0 +1,132 @@
+body {
+  background-color: #f8f3ef;
+  font-family: 'Segoe UI', sans-serif;
+  color: #3e2c2c;
+}
+
+h2 {
+  color: #5c4033;
+  margin-bottom: 1rem;
+}
+
+form {
+  background-color: #fff3e6;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(102, 51, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  padding: 0.6rem;
+  border: 1px solid #cbb092;
+  border-radius: 6px;
+  width: 200px;
+  background-color: #fffaf7;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #a97449;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8b5e3c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fffdf9;
+  box-shadow: 0 0 5px rgba(153, 102, 51, 0.2);
+}
+
+th, td {
+  border: 1px solid #e0cbb7;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #d9b99b;
+  color: #3e2c2c;
+}
+
+td {
+  background-color: #fcf7f3;
+}
+
+input[type="text"]::placeholder {
+  color: #a17c6b;
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 768px) {
+  form {
+    padding: 0.8rem;
+    gap: 0.4rem;
+  }
+
+  input[type="text"] {
+    width: 140px;
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 0.45rem 0.9rem;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    flex-direction: column;
+    padding: 0.6rem;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.6rem 0;
+    font-size: 15px;
+  }
+
+  th, td {
+    padding: 0.5rem;
+    font-size: 13px;
+  }
+  
+  /* Make table horizontally scrollable */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

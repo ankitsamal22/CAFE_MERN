@@ -1,0 +1,84 @@
+/* Header.css - Coffee Theme */
+
+.header-container {
+  background-color: #4b2e2e; /* dark mocha */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  color: #fff3e0; /* light cream */
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ffe0b2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #a47148; /* caramel */
+  color: #fff;
+}
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 12px;
+  }
+
+  .header-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-container {
+    padding: 12px 15px;
+  }
+
+  .header-title {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+}
